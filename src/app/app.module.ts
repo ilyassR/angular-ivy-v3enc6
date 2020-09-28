@@ -9,9 +9,13 @@ import { RecepeDetailComponent } from './recepes/recepeDetail/recepeDetail.compo
 import { RecepeListComponent } from './recepes/recepeList/recepeList.component';
 import { RecepeItemComponent } from './recepes/recepeList/recepeItem/recepeItem.component';
 
+import { shoppingListComponent } from './shoppingList/shoppingList.component';
+import { ShoppingEditComponent } from './shoppingList/shoppingEdit/shoppingEdit.component';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HeaderComponent, RecepesComponent, RecepeListComponent, RecepeItemComponent, RecepeDetailComponent ],
+  declarations: [ AppComponent, HeaderComponent, RecepesComponent, RecepeListComponent, RecepeItemComponent, RecepeDetailComponent,
+  ShoppingEditComponent, shoppingListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

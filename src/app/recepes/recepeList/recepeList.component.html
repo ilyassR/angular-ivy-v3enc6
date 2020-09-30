@@ -3,15 +3,16 @@
     <button class="btn btn-success">New Recepe</button>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-10">
-    <a href="" class="list-group-item clearfix" *ngFor="let recepe of recepes">
+<hr>
+<div class="col-sm-12">
+  <div class="list-group" *ngFor="let recepe of recepes">
+    <a href="" class="list-group-item list-group-item-action">
       <div class="float-left">
-        <h4 class="list-group-item-heading">{{recepe.name}}</h4>
+        <h4 class="mb-1">{{recepe.name}}</h4>
         <p class="list-group-item-text">{{recepe.description}}</p>
       </div>
       <span class="float-right">
-        <img src="{{recepe.imagePath}}" alt="" class="img-responsive" style="max-height: 100px;">
+        <img [src]="recepe.imagePath" alt="{{recepe.name}}" class="img-responsive" style="max-height: 100px;">
       </span>
     </a>
     <app-recepeItem></app-recepeItem>
